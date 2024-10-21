@@ -1,2 +1,3 @@
 # MambaCoral-DiffDet
-MambaCoral-DiffDet code and Dataset It will be made public after the paper is included.
+The MambaCoral-DiffDet code will be public after the paper is accepted.
+
