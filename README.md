@@ -37,3 +37,10 @@ The dataset includes images from the following six coral species:
 
 ---
 
+## 🎯 Applications
+This dataset and the MambaCoral-DiffDet framework can be used for:
+
+- Coral species detection and classification
+- Object detection in underwater environments
+- Data augmentation using diffusion models
+- Knowledge distillation for marine biology applications
