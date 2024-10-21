@@ -1,4 +1,4 @@
-# MambaCoral-DiffDet (MMCD) 🪸
+# MambaCoral-DiffDet (MMCD) 
 
 [![Dataset Download](https://img.shields.io/badge/Download-MambaCoral--DiffDet%20Dataset-blue)](https://drive.google.com/file/d/1XZYcADIhvO0XxR-iltXc7dliJzzwv23Y/view?usp=drive_link)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
