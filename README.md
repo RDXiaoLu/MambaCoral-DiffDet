@@ -42,10 +42,11 @@ To showcase the diversity of generated images, here are multiple augmented versi
 
 ## 🔍 Citation & Preprint
 
-For more details on the original dataset, refer to the [SCoralDet GitHub page](https://github.com/RDXiaoLu/SCoralDet-Dataset) or the preprint:
-**Lu, Zhaoxuan and Liao, Lyuchao, et al.**  
-"SCoralDet: Efficient Real-Time Underwater Soft Coral Detection with YOLO."  
-Available at SSRN: [SSRN abstract](https://ssrn.com/abstract=4992454)
+For more details on the original dataset, refer to the preprint:
+**Lu, Zhaoxuan and Liao, Lyuchao and Xie, Xingang and Yuan, Hui.**  
+**SCoralDet: Efficient Real-Time Underwater Soft Coral Detection with YOLO.**  
+Available at SSRN: [https://ssrn.com/abstract=4992454](https://ssrn.com/abstract=4992454)  
+or [http://dx.doi.org/10.2139/ssrn.4992454](http://dx.doi.org/10.2139/ssrn.4992454).
 
 ---
 
