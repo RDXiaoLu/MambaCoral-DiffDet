@@ -41,7 +41,7 @@ To showcase the diversity of generated images, here are multiple augmented versi
 ---
 
 ## 🔗 Connection with SCoralDet
-This work builds upon the **SCoralDet** dataset and research, extending the capabilities of coral detection models by introducing advanced techniques and enhanced architectures. For more information on the **SCoralDet** dataset, see the [SCoralDet GitHub repository](https://github.com/RDXiaoLu/SCoralDet-Dataset).
+This work builds upon the **SCoralDet** dataset and research, extending the capabilities of coral detection models by introducing advanced techniques and enhanced architectures.
 
 ---
 
