@@ -40,6 +40,31 @@ To showcase the diversity of generated images, here are multiple augmented versi
 
 ---
 
+## 🔗 Connection with SCoralDet
+This work builds upon the **SCoralDet** dataset and research, extending the capabilities of coral detection models by introducing advanced techniques and enhanced architectures. For more information on the **SCoralDet** dataset, see the [SCoralDet GitHub repository](https://github.com/RDXiaoLu/SCoralDet-Dataset).
+
+---
+
+## 📊 Performance Comparison of MambaCoral-DiffDet (MCDD) with SOTA Models
+
+The table below shows a comparison of **MambaCoral-DiffDet (MCDD)** against state-of-the-art (SOTA) models, demonstrating its improved performance in terms of mAP, precision, recall, and computational efficiency.
+
+| **Model**    | **mAP50** | **mAP(50-95)** | **Precision** | **Recall** | **Parameters (M)** | **GFLOPs** |
+|--------------|-----------|----------------|---------------|------------|--------------------|------------|
+| MambaYOLO    | 0.801     | 0.52          | 0.848         | 0.723      | 6.0               | 13.6       |
+| RT-DETR      | 0.816     | 0.546         | 0.881         | 0.770      | 42.0              | 129.6      |
+| YOLOv8       | 0.790     | 0.503         | 0.782         | 0.738      | 3.0               | 8.1        |
+| YOLOv9       | 0.788     | 0.521         | 0.875         | 0.681      | 2.0               | 7.6        |
+| YOLOv10      | 0.797     | 0.512         | 0.800         | 0.743      | 2.3               | 6.5        |
+| YOLOv11      | 0.799     | 0.518         | 0.847         | 0.735      | 2.6               | 6.3        |
+| MCDD (Ours)  | **0.843** | **0.566**     | **0.876**     | **0.750**  | **6.5**           | **13.6**   |
+
+*Table: Comparison of MambaCoral-DiffDet (MCDD) with state-of-the-art performance models.*
+
+---
+
+
+
 ## 🔍 Citation & Preprint
 
 For more details on the original dataset, refer to the preprint:
