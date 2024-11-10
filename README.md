@@ -38,7 +38,16 @@ To showcase the diversity of generated images, here are multiple augmented versi
 | ![Original Wavinghand](https://github.com/RDXiaoLu/SCoralDet-Dataset/blob/main/Data%20Preview/Wavinghand.png) | ![Augmented Wavinghand](https://github.com/RDXiaoLu/MambaCoral-DiffDet/blob/main/Dataset%20Preview/Generate%20Images/WavingHand_361.JPG) | ![Augmented Wavinghand](https://github.com/RDXiaoLu/MambaCoral-DiffDet/blob/main/Dataset%20Preview/Generate%20Images/WavingHand_330.JPG) | ![Augmented Wavinghand](https://github.com/RDXiaoLu/MambaCoral-DiffDet/blob/main/Dataset%20Preview/Generate%20Images/WavingHand_170.JPG) |
 | ![Original Favosites](https://github.com/RDXiaoLu/SCoralDet-Dataset/blob/main/Data%20Preview/Favosites.png) | ![Augmented Favosites](https://github.com/RDXiaoLu/MambaCoral-DiffDet/blob/main/Dataset%20Preview/Generate%20Images/Favosites_153.JPG) | ![Augmented Favosites](https://github.com/RDXiaoLu/MambaCoral-DiffDet/blob/main/Dataset%20Preview/Generate%20Images/Favosites_133.JPG) | ![Augmented Favosites](https://github.com/RDXiaoLu/MambaCoral-DiffDet/blob/main/Dataset%20Preview/Generate%20Images/Favosites_108.JPG) |
 
+---
 
+## 🔍 Citation & Preprint
+
+For more details on the original dataset, refer to the [SCoralDet GitHub page](https://github.com/RDXiaoLu/SCoralDet-Dataset) or the preprint:
+**Lu, Zhaoxuan and Liao, Lyuchao, et al.**  
+"SCoralDet: Efficient Real-Time Underwater Soft Coral Detection with YOLO."  
+Available at SSRN: [SSRN abstract](https://ssrn.com/abstract=4992454)
+
+---
 
 ## 🎯 Applications
 This dataset and the MambaCoral-DiffDet framework can be used for:
