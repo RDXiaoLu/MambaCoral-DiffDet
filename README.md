@@ -65,14 +65,22 @@ The table below shows a comparison of **MambaCoral-DiffDet (MCDD)** against stat
 
 
 
-## 🔍 Citation & Preprint
+## 🔍 Citation 
 
-For more details on the original dataset, refer to the preprint:
+For more details on the original dataset, refer to the paper:
 
-**Lu, Zhaoxuan and Liao, Lyuchao and Xie, Xingang and Yuan, Hui.**  
-**SCoralDet: Efficient Real-Time Underwater Soft Coral Detection with YOLO.**  
-Available at SSRN: [https://ssrn.com/abstract=4992454](https://ssrn.com/abstract=4992454)  
-or [http://dx.doi.org/10.2139/ssrn.4992454](http://dx.doi.org/10.2139/ssrn.4992454).
+```markdown 
+@ARTICLE{lu2024scoraldet,  
+         author={Lu, Zhaoxuan and Liao, Lyuchao and Xie, Xingang and Yuan, Hui},  
+         title={SCoralDet: Efficient real-time underwater soft coral detection with YOLO},  
+         journal={Ecological Informatics},  
+         year={2024},  
+         artnum={102937},  
+         issn={1574-9541},  
+         doi={10.1016/j.ecoinf.2024.102937},  
+}  
+```
+
 
 ---
 
