@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/3bb760f8-c981-4464-864d-5b23801f5273)
+
 # MambaCoral-DiffDet (MMCD) 
 
 [![Dataset Download](https://img.shields.io/badge/Download-MambaCoral--DiffDet%20Dataset-blue)](https://drive.google.com/file/d/1XZYcADIhvO0XxR-iltXc7dliJzzwv23Y/view?usp=drive_link)
