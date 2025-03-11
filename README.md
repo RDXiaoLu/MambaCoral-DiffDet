@@ -12,6 +12,11 @@
 
 ---
 
+## 📅 Recent Updates  
+- **[2025/03/11]**: Integrated the **DGM(Diffusion Model-Driven Data Generation Module)** ComfyUI workflow as a `.json` file along with the visual representation of the workflow for easier implementation!  
+- **[2024/11/20]**: We've opened up our dataset! [[MCDD-Dataset]](https://drive.google.com/file/d/1XZYcADIhvO0XxR-iltXc7dliJzzwv23Y/view?usp=drive_link)
+---
+
 ## 📂 Dataset Information
 
 ### Original Dataset
