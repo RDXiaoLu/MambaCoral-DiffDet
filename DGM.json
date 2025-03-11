@@ -1,0 +1,1268 @@
+{
+  "last_node_id": 90,
+  "last_link_id": 169,
+  "nodes": [
+    {
+      "id": 37,
+      "type": "Reroute",
+      "pos": [
+        932.4072265625,
+        33.23297119140625
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 143,
+          "label": ""
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            145
+          ],
+          "slot_index": 0,
+          "label": ""
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 38,
+      "type": "Reroute",
+      "pos": [
+        932.6687622070312,
+        179.84832763671875
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 144,
+          "label": ""
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "CLIP",
+          "links": [
+            61,
+            62
+          ],
+          "slot_index": 0,
+          "label": ""
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 39,
+      "type": "Reroute",
+      "pos": [
+        932.9300537109375,
+        349.07562255859375
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 134,
+          "label": ""
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            120,
+            167
+          ],
+          "slot_index": 0,
+          "label": ""
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 40,
+      "type": "UNETLoader",
+      "pos": [
+        350.45849609375,
+        38.7371826171875
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            143
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "MODEL",
+          "localized_name": "模型"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "flux1-dev-fp8.safetensors",
+        "fp8_e4m3fn"
+      ]
+    },
+    {
+      "id": 41,
+      "type": "DualCLIPLoader",
+      "pos": [
+        356.111328125,
+        193.7371826171875
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            144
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CLIP",
+          "localized_name": "CLIP"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader"
+      },
+      "widgets_values": [
+        "t5xxl_fp8_e4m3fn.safetensors",
+        "clip_l.safetensors",
+        "flux"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "VAELoader",
+      "pos": [
+        346.111328125,
+        373.7371826171875
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            134
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "VAE",
+          "localized_name": "VAE"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "ae.sft"
+      ]
+    },
+    {
+      "id": 58,
+      "type": "BasicScheduler",
+      "pos": [
+        1742,
+        511
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 123,
+          "label": "model",
+          "localized_name": "模型"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            166
+          ],
+          "shape": 3,
+          "label": "SIGMAS",
+          "localized_name": "Sigmas"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BasicScheduler"
+      },
+      "widgets_values": [
+        "beta",
+        20,
+        1
+      ]
+    },
+    {
+      "id": 74,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        1763.403076171875,
+        -310.96490478515625
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 145,
+          "label": "model",
+          "localized_name": "模型"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            146
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "MODEL",
+          "localized_name": "模型"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "flux_fa.safetensors",
+        1
+      ]
+    },
+    {
+      "id": 35,
+      "type": "FluxGuidance",
+      "pos": [
+        1470.090576171875,
+        0.614044725894928
+      ],
+      "size": [
+        211.60000610351562,
+        58
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 56,
+          "label": "conditioning",
+          "localized_name": "条件"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            110
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CONDITIONING",
+          "localized_name": "条件"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FluxGuidance"
+      },
+      "widgets_values": [
+        3.5
+      ]
+    },
+    {
+      "id": 33,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1213.4117431640625,
+        49.83953857421875
+      ],
+      "size": [
+        422.84503173828125,
+        164.31304931640625
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 62,
+          "slot_index": 0,
+          "label": "clip",
+          "localized_name": "clip"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [],
+          "slot_index": 0,
+          "label": "CONDITIONING",
+          "localized_name": "条件"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "",
+        true
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1722.6656494140625,
+        -151.98245239257812
+      ],
+      "size": [
+        422.84503173828125,
+        164.31304931640625
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 61,
+          "label": "clip",
+          "localized_name": "clip"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            56
+          ],
+          "slot_index": 0,
+          "label": "CONDITIONING",
+          "localized_name": "条件"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "The image is a close-up of a sea urchin. The urchins are round and have a smooth surface. They are covered in small, irregularly shaped scales that are a mix of blue, green, and purple colors. The scales are arranged in a pattern that creates a textured appearance. The background is blurred, but it appears to be an underwater environment with rocks and other marine life visible. The image is taken from a low angle, looking up at the urchine.favosites",
+        true
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 55,
+      "type": "RandomNoise",
+      "pos": [
+        1742.597412109375,
+        79.480712890625
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "NOISE",
+          "type": "NOISE",
+          "links": [
+            106
+          ],
+          "shape": 3,
+          "label": "NOISE",
+          "localized_name": "噪波"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RandomNoise"
+      },
+      "widgets_values": [
+        351052700005719,
+        "randomize"
+      ]
+    },
+    {
+      "id": 54,
+      "type": "SamplerCustomAdvanced",
+      "pos": [
+        2196.9609375,
+        271.783203125
+      ],
+      "size": [
+        355.20001220703125,
+        326
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "noise",
+          "type": "NOISE",
+          "link": 106,
+          "slot_index": 0,
+          "label": "noise",
+          "localized_name": "噪波"
+        },
+        {
+          "name": "guider",
+          "type": "GUIDER",
+          "link": 107,
+          "slot_index": 1,
+          "label": "guider",
+          "localized_name": "引导器"
+        },
+        {
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": 111,
+          "slot_index": 2,
+          "label": "sampler",
+          "localized_name": "采样器"
+        },
+        {
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 166,
+          "slot_index": 3,
+          "label": "sigmas",
+          "localized_name": "西格玛"
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 168,
+          "label": "latent_image",
+          "localized_name": "Latent图像"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "LATENT",
+          "links": [
+            118
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "output",
+          "localized_name": "Latent"
+        },
+        {
+          "name": "denoised_output",
+          "type": "LATENT",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "denoised_output",
+          "localized_name": "降噪Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SamplerCustomAdvanced"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 90,
+      "type": "PreviewImage",
+      "pos": [
+        2979.05517578125,
+        -152.5853729248047
+      ],
+      "size": [
+        210,
+        26
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 169,
+          "localized_name": "图像",
+          "label": "images"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 61,
+      "type": "VAEDecode",
+      "pos": [
+        2586.395751953125,
+        177.25518798828125
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 118,
+          "label": "samples",
+          "localized_name": "Latent"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 120,
+          "label": "vae",
+          "localized_name": "vae"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            141,
+            169
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE",
+          "localized_name": "图像"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 73,
+      "type": "SaveImage",
+      "pos": [
+        2952.12255859375,
+        49.45090103149414
+      ],
+      "size": [
+        350.1836242675781,
+        379.2959899902344
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 141,
+          "label": "images",
+          "localized_name": "图片"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 57,
+      "type": "KSamplerSelect",
+      "pos": [
+        1731.8994140625,
+        350
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            111
+          ],
+          "shape": 3,
+          "label": "SAMPLER",
+          "localized_name": "采样器"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerSelect"
+      },
+      "widgets_values": [
+        "euler"
+      ]
+    },
+    {
+      "id": 56,
+      "type": "BasicGuider",
+      "pos": [
+        1775.8760986328125,
+        214.12460327148438
+      ],
+      "size": [
+        241.79998779296875,
+        46
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 122,
+          "label": "model",
+          "localized_name": "模型"
+        },
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 110,
+          "label": "conditioning",
+          "localized_name": "条件"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "GUIDER",
+          "type": "GUIDER",
+          "links": [
+            107
+          ],
+          "shape": 3,
+          "label": "GUIDER",
+          "localized_name": "引导器"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BasicGuider"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 63,
+      "type": "ModelSamplingFlux",
+      "pos": [
+        1384.58642578125,
+        190.57716369628906
+      ],
+      "size": [
+        315,
+        130
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 146,
+          "label": "model",
+          "localized_name": "模型"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 128,
+          "slot_index": 1,
+          "widget": {
+            "name": "width"
+          },
+          "label": "width"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 129,
+          "slot_index": 2,
+          "widget": {
+            "name": "height"
+          },
+          "label": "height"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            122,
+            123
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "MODEL",
+          "localized_name": "模型"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingFlux"
+      },
+      "widgets_values": [
+        1.15,
+        0.5,
+        480,
+        480
+      ]
+    },
+    {
+      "id": 65,
+      "type": "PrimitiveNode",
+      "pos": [
+        1146.10205078125,
+        301.4703369140625
+      ],
+      "size": [
+        210,
+        82
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            129
+          ],
+          "widget": {
+            "name": "height"
+          },
+          "label": "INT"
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        480,
+        "fixed"
+      ]
+    },
+    {
+      "id": 64,
+      "type": "PrimitiveNode",
+      "pos": [
+        1146.3582763671875,
+        165.58212280273438
+      ],
+      "size": [
+        210,
+        82
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            128
+          ],
+          "widget": {
+            "name": "width"
+          },
+          "label": "INT"
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        480,
+        "fixed"
+      ]
+    },
+    {
+      "id": 86,
+      "type": "LoadImage",
+      "pos": [
+        978.33203125,
+        631.5390625
+      ],
+      "size": [
+        445.5314636230469,
+        414.17529296875
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            165
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE",
+          "localized_name": "图像"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "MASK",
+          "localized_name": "遮罩"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "48 (2).jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 87,
+      "type": "VAEEncode",
+      "pos": [
+        1480.0960693359375,
+        545.82568359375
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 165,
+          "label": "pixels",
+          "localized_name": "像素"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 167,
+          "label": "vae",
+          "localized_name": "vae"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            168
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "LATENT",
+          "localized_name": "Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      56,
+      6,
+      0,
+      35,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      61,
+      38,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      62,
+      38,
+      0,
+      33,
+      0,
+      "CLIP"
+    ],
+    [
+      106,
+      55,
+      0,
+      54,
+      0,
+      "NOISE"
+    ],
+    [
+      107,
+      56,
+      0,
+      54,
+      1,
+      "GUIDER"
+    ],
+    [
+      110,
+      35,
+      0,
+      56,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      111,
+      57,
+      0,
+      54,
+      2,
+      "SAMPLER"
+    ],
+    [
+      118,
+      54,
+      0,
+      61,
+      0,
+      "LATENT"
+    ],
+    [
+      120,
+      39,
+      0,
+      61,
+      1,
+      "VAE"
+    ],
+    [
+      122,
+      63,
+      0,
+      56,
+      0,
+      "MODEL"
+    ],
+    [
+      123,
+      63,
+      0,
+      58,
+      0,
+      "MODEL"
+    ],
+    [
+      128,
+      64,
+      0,
+      63,
+      1,
+      "INT"
+    ],
+    [
+      129,
+      65,
+      0,
+      63,
+      2,
+      "INT"
+    ],
+    [
+      134,
+      42,
+      0,
+      39,
+      0,
+      "*"
+    ],
+    [
+      141,
+      61,
+      0,
+      73,
+      0,
+      "IMAGE"
+    ],
+    [
+      143,
+      40,
+      0,
+      37,
+      0,
+      "*"
+    ],
+    [
+      144,
+      41,
+      0,
+      38,
+      0,
+      "*"
+    ],
+    [
+      145,
+      37,
+      0,
+      74,
+      0,
+      "MODEL"
+    ],
+    [
+      146,
+      74,
+      0,
+      63,
+      0,
+      "MODEL"
+    ],
+    [
+      165,
+      86,
+      0,
+      87,
+      0,
+      "IMAGE"
+    ],
+    [
+      166,
+      58,
+      0,
+      54,
+      3,
+      "SIGMAS"
+    ],
+    [
+      167,
+      39,
+      0,
+      87,
+      1,
+      "VAE"
+    ],
+    [
+      168,
+      87,
+      0,
+      54,
+      4,
+      "LATENT"
+    ],
+    [
+      169,
+      61,
+      0,
+      90,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 2,
+      "title": "Model",
+      "bounding": [
+        922.4071655273438,
+        -10.506985664367676,
+        140,
+        80
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "CLIP",
+      "bounding": [
+        922.4688110351562,
+        136.4283905029297,
+        140,
+        80
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "VAE",
+      "bounding": [
+        922.9301147460938,
+        309.07568359375,
+        140,
+        80
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "Input-Model From Kijia",
+      "bounding": [
+        264.1113586425781,
+        -67.26277923583984,
+        497,
+        577
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 8,
+      "title": "LoRA",
+      "bounding": [
+        1733.403076171875,
+        -395.96490478515625,
+        385,
+        200
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6588450000000011,
+      "offset": [
+        236.4197067448186,
+        482.4502539103478
+      ]
+    },
+    "workspace_info": {
+      "id": "DJtUHmY1tJUsaH736Xgfq",
+      "saveLock": false,
+      "cloudID": null,
+      "coverMediaPath": null
+    },
+    "ue_links": []
+  },
+  "version": 0.4
+}
