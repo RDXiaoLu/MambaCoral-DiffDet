@@ -71,7 +71,6 @@ The table below shows a comparison of **MambaCoral-DiffDet (MCDD)** against stat
 ---
 
 
-
 ## 🔍 Citation 
 
 For more details on the original dataset, refer to the paper:
