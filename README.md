@@ -70,7 +70,7 @@ The table below shows a comparison of **MambaCoral-DiffDet (MCDD)** against stat
 
 ---
 
-## How to use DGM
+## 🛠️ How to use DGM
 
 First make sure you can run [ComfyUI](https://github.com/comfyanonymous/ComfyUI), If not, complete the following steps：
 ```markdown 
