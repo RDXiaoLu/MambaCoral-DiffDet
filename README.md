@@ -70,6 +70,21 @@ The table below shows a comparison of **MambaCoral-DiffDet (MCDD)** against stat
 
 ---
 
+## How to use DGM
+
+First make sure you can run [ComfyUI](https://github.com/comfyanonymous/ComfyUI), If not, complete the following steps：
+```markdown 
+git clone https://github.com/comfyanonymous/ComfyUI
+```
+In order to facilitate the use of academic workers and researchers, we used ComfyUI to build the DGM workflow. We provided the configuration file **DGM_cfg.json**, and its parameters and configuration are shown in the figure DGM_cfg.
+[DGM_cfg](https://github.com/RDXiaoLu/MambaCoral-DiffDet/blob/main/fig/DGM_cfg.png)
+
+You only need to import the **.json** file we provide and download the corresponding model weights to generate your own coral images.
+
+
+
+---
+
 
 ## 🔍 Citation 
 
