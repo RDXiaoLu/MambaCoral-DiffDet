@@ -31,7 +31,7 @@ Using the **MambaCoral-DiffDet** model's **DGM structure**, we have created an a
 
 You can download the augmented dataset here:
 - **[MambaCoral-DiffDet Augmented Dataset](https://drive.google.com/file/d/1XZYcADIhvO0XxR-iltXc7dliJzzwv23Y/view?usp=drive_link)**
-We also provide **5 coral videos** as part of the dataset. You can access and download them via the following [Google Drive](https://drive.google.com/file/d/1gGZgNfaqIUClyeygsUnVDogAIwkJLGx9/view?usp=drive_link).
+- We also provide **5 coral videos** as part of the dataset. You can access and download them via the following [Google Drive](https://drive.google.com/file/d/1gGZgNfaqIUClyeygsUnVDogAIwkJLGx9/view?usp=drive_link).
 
 ---
 
