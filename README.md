@@ -13,6 +13,7 @@
 ---
 
 ## 📅 Recent Updates  
+- **[2025/03/15]**: We have added **5 coral videos** to enrich the dataset and provide additional resources for your research. 
 - **[2025/03/11]**: Integrated the **DGM(Diffusion Model-Driven Data Generation Module)** ComfyUI workflow as a `.json` file along with the visual representation of the workflow for easier implementation!  
 - **[2024/11/20]**: We've opened up our dataset! [[MCDD-Dataset]](https://drive.google.com/file/d/1XZYcADIhvO0XxR-iltXc7dliJzzwv23Y/view?usp=drive_link)
 ---
@@ -30,6 +31,7 @@ Using the **MambaCoral-DiffDet** model's **DGM structure**, we have created an a
 
 You can download the augmented dataset here:
 - **[MambaCoral-DiffDet Augmented Dataset](https://drive.google.com/file/d/1XZYcADIhvO0XxR-iltXc7dliJzzwv23Y/view?usp=drive_link)**
+We also provide **5 coral videos** as part of the dataset. You can access and download them via the following [Google Drive](https://drive.google.com/file/d/1gGZgNfaqIUClyeygsUnVDogAIwkJLGx9/view?usp=drive_link).
 
 ---
 
