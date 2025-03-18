@@ -109,7 +109,7 @@ For more details on the original dataset, refer to the paper:
 ---
 
 ## 🎯 Applications
-This dataset and the MambaCoral-DiffDet framework can be used for:
+This dataset and the MambaCoral-DiffDet framework can be used for :
 
 - Coral species detection and classification
 - Object detection in underwater environments
