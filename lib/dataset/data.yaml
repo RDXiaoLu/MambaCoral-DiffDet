@@ -4,7 +4,7 @@
 # val: ./images/val # path + val
 # test: ./images/val # path + test
 
-path: /data/yuanhui/data/coral_soft_plus/
+path: /your_dataset_path/data/coral_soft_plus/
 train: ./images/train  # path + train
 val: ./images/val # path + val
 test: ./images/val # path + test
