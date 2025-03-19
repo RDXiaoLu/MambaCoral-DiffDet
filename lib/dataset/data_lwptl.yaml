@@ -1,0 +1,10 @@
+
+# dataset path
+path: /your_data_setpath/data/coral_lwptl
+
+train: ./train/images
+val: ./valid/images
+test: ./test/images
+
+nc: 14
+names: ['Arborescent', 'Caespitose-a', 'Caespitose-b', 'Columnar', 'Corymbose', 'Digitate', 'Encrusting', 'Foliose', 'Massive-Faviidae', 'Massive-Merulinidae', 'Massive-Mussidae', 'Massive-Poritidae', 'Solitary', 'Tabular']
