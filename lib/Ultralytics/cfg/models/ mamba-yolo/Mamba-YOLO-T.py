@@ -1,7 +1,7 @@
 
 nc: 80  # number of classes
 scales:   # [depth, width, max_channels]
-  T: [0.33, 0.25, 1024]  #Mamba-YOLOv8-T summary: 6.1M parameters,   14.3GFLOPs
+  T: [0.33, 0.25, 1024]  
 
 
 # Mamba-YOLO backbone 
