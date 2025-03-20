@@ -163,3 +163,12 @@ This dataset and the MambaCoral-DiffDet framework can be used for :
 - Object detection in underwater environments
 - Data augmentation using diffusion models
 - Knowledge distillation for marine biology applications
+
+--
+
+## ✨ Contributions & 📬 Contact Us
+We welcome contributions to improve this dataset and code! Feel free to:
+
+- Report issues or bugs.
+- Submit pull requests for any enhancements.
+- Email us directly at [luzhaoxuan@smail.fjut.edu.cn]. 
