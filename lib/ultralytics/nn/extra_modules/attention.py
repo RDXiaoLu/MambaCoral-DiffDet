@@ -3,6 +3,8 @@ from torch import nn
 import math
 import itertools
 
+__all__ = [ 'LSKA',  'LWA',  'AGLAttention']
+
 class LSKA(nn.Module):
     # Large-Separable-Kernel-Attention
     def __init__(self, dim, k_size=7):
@@ -196,12 +198,11 @@ class Mix(nn.Module):
         out = fea1 * mix_factor.expand_as(fea1) + fea2 * (1 - mix_factor.expand_as(fea2))
         return out
 
-class AFGCAttention(nn.Module):
-    # https://www.sciencedirect.com/science/article/abs/pii/S0893608024002387
-    # https://github.com/Lose-Code/UBRFC-Net
-    # Adaptive Fine-Grained Channel Attention
+class AGLAttention(nn.Module):
+
+    # Adaptive Global Local Attention
     def __init__(self, channel, b=1, gamma=2):
-        super(AFGCAttention, self).__init__()
+        super(AGLAttention, self).__init__()
         self.avg_pool = nn.AdaptiveAvgPool2d(1)#全局平均池化
         #一维卷积
         t = int(abs((math.log(channel, 2) + b) / gamma))
