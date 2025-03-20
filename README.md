@@ -112,7 +112,7 @@ pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https
 Install dependencies:
 ```markdown
 pip install -r requirements.txt
-markdown
+```
 ### 2. **Inference**
 You can download the model weights for inference:
 ```markdown
