@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/3bb760f8-c981-4464-864d-5b23801f5273)
 
+# A Diffusion Model and Knowledge Distillation Framework for Robust Coral Detection in Complex Underwater Environments
 # MambaCoral-DiffDet (MMCD) 
-
 [![Dataset Download](https://img.shields.io/badge/Download-MambaCoral--DiffDet%20Dataset-blue)](https://drive.google.com/file/d/1XZYcADIhvO0XxR-iltXc7dliJzzwv23Y/view?usp=drive_link)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-diffusion-model-and-knowledge-distillation/2d-object-detection-on-scoraldet-dataset-1)
