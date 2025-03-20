@@ -91,9 +91,41 @@ In order to facilitate the use of academic workers and researchers, we used Comf
 You only need to import the **.json** file we provide and download the corresponding model weights to generate your own coral images.
 
 
+## ⚙️ How to Use MambaCoral-DiffDet
 
----
+### 1. **Environment Setup**
 
+Clone the repository: 
+```markdown
+git clone https://github.com/RDXiaolu/MambaCoral-DiffDet.git  
+cd MambaCoral-DiffDet  
+```
+Create virtual environment:
+```markdown
+conda create -n MCDD python=3.9
+conda activate MCDD
+```
+Install PyTorch:
+```markdown
+pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cu121
+```
+Install dependencies:
+pip install -r requirements.txt
+### 2. **Inference**
+You can download the model weights for inference:
+```markdown
+python detect.py
+```
+### 3. **Training the Model**
+You can begin training the model by executing the following command:
+```markdown
+python distill.py
+```
+### 4. **Model Validation**
+After training, validate the model’s performance using the following command:
+```markdown
+python val.py
+```
 
 ## 🔍 Citation 
 
