@@ -164,7 +164,6 @@ This dataset and the MambaCoral-DiffDet framework can be used for :
 - Data augmentation using diffusion models
 - Knowledge distillation for marine biology applications
 
---
 
 ## ✨ Contributions & 📬 Contact Us
 We welcome contributions to improve this dataset and code! Feel free to:
