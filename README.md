@@ -177,7 +177,7 @@ We welcome contributions to improve this dataset and code! Feel free to:
 
 ## 🙏 Acknowledgments  
 
-We would like to express our gratitude to **Ultralytics** for their outstanding contributions to the field of computer vision and deep learning, which have greatly influenced our work.  
+We would like to express our gratitude to **[Ultralytics](https://github.com/ultralytics/ultralytics)** for their outstanding contributions to the field of computer vision and deep learning, which have greatly influenced our work.  
 
-Additionally, we want to thank **Roboflow** and their dataset available at [Roboflow Universe - Coral](https://universe.roboflow.com/roboflow-100/coral-lwptl). Their resources have been invaluable in helping us develop and improve our model.  
+Additionally, we want to thank **Roboflow** and their dataset available at [Roboflow Universe - Coral-lwptl](https://universe.roboflow.com/roboflow-100/coral-lwptl). Their resources have been invaluable in helping us develop and improve our model.  
 
