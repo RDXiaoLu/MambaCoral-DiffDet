@@ -5,7 +5,7 @@
 
 [![Dataset Download](https://img.shields.io/badge/Download-MambaCoral--DiffDet%20Dataset-blue)](https://drive.google.com/file/d/1XZYcADIhvO0XxR-iltXc7dliJzzwv23Y/view?usp=drive_link)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub Badge](https://img.shields.io/badge/GitHub-Repo-brightgreen?style=flat&logo=github)](https://github.com/RDXiaoLu/MCDD)  
+[![Hugging Face Model](https://img.shields.io/badge/Hugging%20Face-Model-blue?style=flat&logo=Huggingface)](https://huggingface.co/RDXiaolu/MCDD)  
 ![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-diffusion-model-and-knowledge-distillation/2d-object-detection-on-scoraldet-dataset-1)
 
 </div> 
