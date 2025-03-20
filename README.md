@@ -97,39 +97,45 @@ You only need to import the **.json** file we provide and download the correspon
 
 ### 1. **Environment Setup**
 
-Clone the repository: 
+To begin, clone the repository to your local machine:
 ```markdown
 git clone https://github.com/RDXiaolu/MambaCoral-DiffDet.git  
 cd MambaCoral-DiffDet  
 ```
-Create virtual environment:
+Next, create a virtual environment to manage dependencies:
 ```markdown
 conda create -n MCDD python=3.9
 conda activate MCDD
 ```
-Install PyTorch:
+Now, install PyTorch along with its associated libraries. The following command installs the specific versions required for this project:
 ```markdown
 pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cu121
 ```
-Install dependencies:
+Finally, install all other necessary dependencies listed in the `requirements.txt` file:
 ```markdown
 pip install -r requirements.txt
 ```
 ### 2. **Inference**
-You can download the model weights for inference:
+To perform inference using the model, run the following command. Make sure you have downloaded the necessary model weights prior to running this:
 ```markdown
 python detect.py
 ```
 ### 3. **Training the Model**
-You can begin training the model by executing the following command:
+To train the model from scratch or continue training, execute the following command:
 ```markdown
 python distill.py
 ```
 ### 4. **Model Validation**
-After training, validate the model’s performance using the following command:
+After the training process is complete, validate the model’s performance with the following command to check its accuracy and effectiveness:
 ```markdown
 python val.py
 ```
+### 5. **Model Heatmap Generation**
+Once training is finished, you can generate heatmaps to visualize the model's outputs and understand its predictions better. Use the following command:
+```markdown
+python heatmap.py
+```
+If you have any questions, need further clarifications, or require assistance, please don’t hesitate to ask!
 
 ## 🔍 Citation 
 
