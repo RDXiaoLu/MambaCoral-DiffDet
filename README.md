@@ -18,7 +18,9 @@
 ---
 
 ## 📅 Recent Updates  
-- **[2025/03/20]**: We have fully open-sourced the code for the **MCDD** framework. We welcome everyone to try and apply it to their own research! 
+
+- **[2025/03/20]**: We have fully open-sourced the code for the **MCDD** framework. We welcome everyone to try and apply it to their own research! 😊 
+- **[2025/03/18]**: We are excited to have achieved state-of-the-art performance on the SCoralDet dataset. 🎉
 - **[2025/03/15]**: We have added **5 coral videos** to enrich the dataset and provide additional resources for your research [Google Drive](https://drive.google.com/file/d/1gGZgNfaqIUClyeygsUnVDogAIwkJLGx9/view?usp=drive_link). 
 - **[2025/03/11]**: Integrated the **DGM(Diffusion Model-Driven Data Generation Module)** ComfyUI workflow as a `.json` file along with the visual representation of the workflow for easier implementation!  
 - **[2024/11/20]**: We've opened up our dataset! [[MCDD-Dataset]](https://drive.google.com/file/d/1XZYcADIhvO0XxR-iltXc7dliJzzwv23Y/view?usp=drive_link)
@@ -131,7 +133,7 @@ python val.py
 
 ## 🔍 Citation 
 
-For more details on the original dataset, refer to the paper:
+If you find our work useful, please consider citing us or giving us a star ⭐. 
 
 ```markdown 
 @ARTICLE{lu2024scoraldet,  
