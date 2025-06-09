@@ -18,7 +18,7 @@
 ---
 
 ## 📅 Recent Updates  
-- **[2025/06/04]**: We are excited to announce that our paper has been accepted for publication in the [Engineering Applications of Artificial Intelligence(EAAI)](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence) journal!🎉🎉🎉
+- **[2025/06/04]**: We are excited to announce that our paper has been accepted for publication in the [Engineering Applications of Artificial Intelligence (EAAI)](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence) journal!🎉🎉🎉
 - **[2025/03/20]**: We have fully open-sourced the code for the **MCDD** framework. We welcome everyone to try and apply it to their own research! 😊 
 - **[2025/03/18]**: We are excited to have achieved state-of-the-art performance on the [SCoralDet dataset](https://paperswithcode.com/sota/2d-object-detection-on-scoraldet-dataset-1). 🎉
 - **[2025/03/15]**: We have added **5 coral videos** to enrich the dataset and provide additional resources for your research [Google Drive](https://drive.google.com/file/d/1gGZgNfaqIUClyeygsUnVDogAIwkJLGx9/view?usp=drive_link). 
