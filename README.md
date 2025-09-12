@@ -151,8 +151,18 @@ If you find our work useful, please consider citing us or giving us a star ⭐.
          issn={1574-9541},  
          doi={10.1016/j.ecoinf.2024.102937},  
 }  
-```
 
+@article{lu2025diffusion,
+  title={A diffusion model and knowledge distillation framework for robust coral detection in complex underwater environments},
+  author={Lu, Zhaoxuan and Liao, Lyuchao and Li, Chuang and Xie, Xingang and Yuan, Hui},
+  journal={Engineering Applications of Artificial Intelligence},
+  volume={159},
+  pages={111414},
+  year={2025},
+  publisher={Elsevier}
+}
+
+```
 
 ---
 
